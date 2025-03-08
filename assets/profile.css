@@ -1,17 +1,72 @@
-html {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
+
+html{
+    background-image: url('https://applescoop.org/image/wallpapers/mac/huawei-mate-9-luxury-dark-gold-abstract-stock-14-10-2024-1728936550-hd-wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    
+
+}
+/* Centered card */
+.card {
+    width: 350px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
     text-align: center;
-    font-family: arial;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    margin-top: 5vh;
+}
+h2{
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    margin-top: 17vh;
+
 }
 
-title {
-    color: grey;
+.title {
+    position: static;
+    top: 20%;
     font-size: 18px;
+    color: #ddd;
 }
 
-button {
+/* Social Icons */
+.card a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.card a:hover {
+    color: #ffcc00;
+}
+
+/* Contact Button */
+.card button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background: #ffcc00;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.card button:hover {
+    background: #e6b800;
+}
+
+.button {
     border: none;
     outline: 0;
     display: inline-block;
@@ -22,15 +77,12 @@ button {
     cursor: pointer;
     width: 100%;
     font-size: 18px;
+
 }
 
-a {
+.a {
     text-decoration: none;
     font-size: 22px;
     color: black;
-}
-
-button:hover,
-a:hover {
-    opacity: 0.7;
+    background-color: rgb(152, 152, 116);
 }
