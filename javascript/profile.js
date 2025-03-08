@@ -1,5 +1,4 @@
-function platformClick(event){
-    var target = event.target;
-    console.log(target);
-    alert("event.target.id");
+function onClickLinkeDin(event){
+    document.getElementsByClassName('fa fa-linkedin');
+
 }

@@ -1,18 +1,17 @@
-
-html{
+html {
     background-image: url('https://applescoop.org/image/wallpapers/mac/huawei-mate-9-luxury-dark-gold-abstract-stock-14-10-2024-1728936550-hd-wallpaper.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    
 
 }
+
 /* Centered card */
 .card {
     width: 350px;
     background: rgba(0, 0, 0, 0.6);
-    color: white;
+    color: #ffcc00;
     text-align: center;
     border-radius: 10px;
     padding: 20px;
@@ -21,10 +20,11 @@ html{
     backdrop-filter: blur(5px);
     margin-top: 5vh;
 }
-h2{
+
+h2 {
     text-decoration: underline;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: xx-large;
+    font-size: xxx-large;
     margin-top: 17vh;
 
 }
@@ -33,19 +33,35 @@ h2{
     position: static;
     top: 20%;
     font-size: 18px;
-    color: #ddd;
+    color: #ffcc00;
 }
 
 /* Social Icons */
 .card a {
     text-decoration: none;
-    color: white;
+    color: #797565;
     margin: 0 10px;
     font-size: 20px;
 }
 
 .card a:hover {
     color: #ffcc00;
+}
+
+.card a.envelope:hover{
+    color: #DB4437
+}
+.card a.github:hover{
+    color: #e9e9e9
+}
+.card a.linkedin:hover{
+    color: #0077b5
+}
+.card a.phone:hover{
+    color: #4CAF50
+}
+.card a.whatsapp:hover{
+    color: #25D366
 }
 
 /* Contact Button */
@@ -63,7 +79,7 @@ h2{
 }
 
 .card button:hover {
-    background: #e6b800;
+    background: #249ae3;
 }
 
 .button {
@@ -77,7 +93,6 @@ h2{
     cursor: pointer;
     width: 100%;
     font-size: 18px;
-
 }
 
 .a {
@@ -85,4 +100,22 @@ h2{
     font-size: 22px;
     color: black;
     background-color: rgb(152, 152, 116);
+}
+
+.reply-button {
+    background-color: #797565;
+    color: rgb(45, 42, 42);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.reply-button:hover {
+    background-color: #e6b800;
+}
+
+h2 {
+    color: #e6b800;
 }
