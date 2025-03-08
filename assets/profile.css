@@ -11,7 +11,7 @@ html {
 .card {
     width: 350px;
     background: rgba(0, 0, 0, 0.6);
-    color: #ffcc00;
+    color: #797565;
     text-align: center;
     border-radius: 10px;
     padding: 20px;
@@ -33,7 +33,7 @@ h2 {
     position: static;
     top: 20%;
     font-size: 18px;
-    color: #ffcc00;
+    color: #797565;
 }
 
 /* Social Icons */
@@ -58,7 +58,7 @@ h2 {
     color: #0077b5
 }
 .card a.phone:hover{
-    color: #4CAF50
+    color: #aa4caf
 }
 .card a.whatsapp:hover{
     color: #25D366
@@ -70,7 +70,7 @@ h2 {
     outline: none;
     padding: 10px 20px;
     background: #ffcc00;
-    color: black;
+    color: #797565;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
@@ -117,5 +117,5 @@ h2 {
 }
 
 h2 {
-    color: #e6b800;
+    color: #797565;
 }
