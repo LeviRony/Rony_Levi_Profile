@@ -3,48 +3,73 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/profile.css">
-    <link rel="stylesheet" href="/assets/navbar.css">
-    <script src="javascript/profile.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>📞 Contact Me</title>
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="assets/profile.css">
+    <link rel="stylesheet" href="assets/navbar.css">
+
+    <!-- JavaScript -->
+    <script src="javascript/profile.js"></script>
 </head>
-<header>
-    <body>
-        <ul>
-          <li><a class="active" href="">Home</a></li>
-          <li><a href="timeline.html">Carrer</a></li>
-          <li><a href="devTools.html">Dev Tools</a></li>
-          <li><a href="profile.html">Contact</a></li>
-        </ul>
-        </body>
-</header>
+
 <body>
 
-    <h2 style="text-align:center; color: #797565;;">Contact Me</h2>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="timeline.html">Career</a></li>
+                <li><a href="devTools.html">Dev Tools</a></li>
+                <li><a href="profile.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="card">
-        <img src="https://media.licdn.com/dms/image/v2/C5103AQEH8yhUHUEK5A/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1516556980660?e=1746662400&v=beta&t=-VTdefX2nZ0aZPMNkhfYCG_LJC_VEUhU2oXRsYitqf4"
-            alt="Profile Picture" width="200" height="200" style="border-radius: 50%;">
-        <h1>Rony Levi</h1>
-        <p class="title">Director of QA, Head of QA</p>
+    <!-- Contact Section -->
+    <main>
+        <h2 style="text-align: center; color: #797565;">Contact Me</h2>
 
-        <div style="margin: 24px 0;">
-            <a href="mailto:ronylevi99@gmail.com" class="envelope"> <i class="fa fa-envelope"></i></a>
-            <a href="https://github.com/LeviRony?tab=overview&from=2025-01-01&to=2025-12-31" class="github"> <i class="fa fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/rony-levi/" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            <a href="tel:+972544273287" class="phone"><i class="fa fa-phone"></i></a>
-            <a href="tel:+972544273287" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
+        <div class="card">
+            <img src="https://media.licdn.com/dms/image/v2/C5103AQEH8yhUHUEK5A/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1516556980660?e=1746662400&v=beta&t=-VTdefX2nZ0aZPMNkhfYCG_LJC_VEUhU2oXRsYitqf4"
+                alt="Profile Picture" width="200" height="200" style="border-radius: 50%;">
+
+            <h1>Rony Levi</h1>
+            <p class="title">Director of QA, Head of QA</p>
+
+            <div style="margin: 24px 0;">
+                <a href="mailto:ronylevi99@gmail.com" class="envelope" aria-label="Send an email to Rony Levi"><i class="fa fa-envelope"></i></a>
+                <a href="https://github.com/LeviRony" class="github" aria-label="Visit Rony Levi's GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/rony-levi/" class="linkedin" aria-label="View Rony Levi's LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="tel:+972544273287" class="phone" aria-label="Call Rony Levi"><i class="fa fa-phone"></i></a>
+                <a href="https://wa.me/972544273287" class="whatsapp" aria-label="Message Rony Levi on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+            </div>
+
+            <!-- Message Reply Section -->
+            <h2>Reply to My Message</h2>
+            <p>Your reply is important to me. Please respond below:</p>
+
+            <form action="mailto:ronylevi99@gmail.com" method="post" enctype="text/plain">
+                <label for="message" style="display: block; margin-bottom: 5px;">Your Message</label>
+                <textarea id="message" name="message" rows="6" cols="50" placeholder="Type your reply here..."
+                    required></textarea>
+                <br><br>
+                <input type="submit" value="Reply" class="reply-button">
+            </form>
         </div>
-        <h2>Reply to My Message</h2>
-        <p>Your reply is important to me. Please respond below:</p>
+    </main>
 
-        <form action="mailto:onylevi99@gmail.com" method="post" enctype="text/plain">
-            <textarea rows="6" cols="50" placeholder="Type your reply here..." required></textarea><br><br>
-            <input type="submit" value="Reply" class="reply-button">
-        </form>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 MyWebsite | All Rights Reserved</p>
+    </footer>
 
 </body>
 

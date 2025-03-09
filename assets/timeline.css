@@ -19,7 +19,7 @@ body {
 /* My Journey title */
 .timeline-title {
   margin-left: 5%;
-  font-size: 50px;
+  font-size: 3rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -184,7 +184,7 @@ b:hover {
 
 b {
   font-size: medium;
-  color: white(46, 36, 13, 0.963);
+  color: rgb(2, 3, 3);
 }
 
 /* Learn subjects */
@@ -210,9 +210,10 @@ p {
 }
 
 footer {
-  color: #797565;
-  background-color: aqua;
+  color: #f6f6f6;
+  background-color: #797565;
   padding: 10px;
   text-align: center;
-  margin-bottom: 20%;
+  margin-bottom: 0%;
+  height: 1%;
 }

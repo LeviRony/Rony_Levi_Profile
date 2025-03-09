@@ -5,106 +5,131 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>💼 My Career</title>
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+  <!-- External Styles -->
   <link rel="stylesheet" href="/assets/timeline.css">
   <link rel="stylesheet" href="/assets/navbar.css">
-  <script src="javascript/timeline.js"></script>
 </head>
-<header>
-
-  <body>
-    <ul>
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="timeline.html">Carrer</a></li>
-      <li><a href="devTools.html">Dev Tools</a></li>
-      <li><a href="profile.html">Contact</a></li>
-    </ul>
-  </body>
-</header>
 
 <body>
-  <h2 class="timeline-title">My Journey</h2>
-  <i class="fa-solid fa-map-pin fa-beat"></i>
-  <div class="timeline">
-    <div class="container left">
-      <div class="content" id="today">
-        <h2>Today</h2>
-        <h3></h3>
-        <b></b>
+
+  <!-- Header & Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="timeline.html">Career</a></li>
+        <li><a href="devTools.html">Dev Tools</a></li>
+        <li><a href="profile.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h2 class="timeline-title">My Journey</h2>
+    <i class="fa-solid fa-map-pin fa-beat"></i>
+
+    <div class="timeline">
+
+      <!-- 2025 -->
+      <div class="container right">
+        <div class="learning">
+          <h2>2025</h2>
+          <h3><a href="https://campus-ipc.co.il/">Full Stack Developer</a></h3>
+          <b>IPC</b>
+          <p>JavaScript, Java, Web Client, DB, MongoDB, PostgreSQL</p>
+        </div>
       </div>
-    </div>
-    <div class="container right">
-      <div class="learning">
-        <h2>2025</h2>
-        <h3 href="https://campus-ipc.co.il/">Full Stack Developer</h3>
-        <b>IPC</b>
-        <p>javascript, Java, Web client, DB Mongo db, PostgreSQL</p>
-      </div>
-    </div>
+
+      <!-- 2020 -->
       <div class="container left">
-        <div class="content" id="celsius">
+        <div class="content">
           <h2>2020</h2>
           <h3>Director of QA</h3>
-          <b href="https://celsius.network">Celsius Network</b>
+          <b><a href="https://celsius.network">Celsius Network</a></b>
         </div>
       </div>
+
+      <!-- 2018 -->
       <div class="container right">
-        <div class="content" id="glassbox">
+        <div class="content">
           <h2>2018</h2>
           <h3>Head of QA</h3>
-          <b href="https://www.glassbox.com/">Glassbox</b>
+          <b><a href="https://www.glassbox.com/">Glassbox</a></b>
         </div>
       </div>
+
       <div class="container right">
         <div class="learning">
           <h2>2018</h2>
           <h3>Full Stack Automation</h3>
-          <b class="atid" onclick=" onClickBrowseTo(event)" onmouseover>Atidcollege - Yoni Flenner</b>
-          <p>Java, Selenium, Appium, API automation Jenkins, HTML, CSS</p>
+          <b class="atid" onclick="onClickBrowseTo(event)">Atidcollege - Yoni Flenner</b>
+          <p>Java, Selenium, Appium, API Automation, Jenkins, HTML, CSS</p>
         </div>
       </div>
+
+      <!-- 2017 -->
       <div class="container left">
         <div class="content">
           <h2>2017</h2>
-          <h3 href="https://www.linkedin.com/company/mobilogy_com/about/">QA Team Manager</h3>
+          <h3><a href="https://www.linkedin.com/company/mobilogy_com/about/">QA Team Manager</a></h3>
           <b>Mobilogy</b>
         </div>
       </div>
+
+      <!-- 2014 -->
       <div class="container right">
         <div class="content">
           <h2>2014</h2>
-          <h3 href="https://www.linkedin.com/company/sirin-labs/">QA Team Lead</h3>
+          <h3><a href="https://www.linkedin.com/company/sirin-labs/">QA Team Lead</a></h3>
           <b>Sirin Labs</b>
         </div>
       </div>
+
+      <!-- 2013 -->
       <div class="container left">
         <div class="content">
           <h2>2013</h2>
-          <h3 href="http://www.samsung.com">QA Engineer</h3>
+          <h3><a href="http://www.samsung.com">QA Engineer</a></h3>
           <b>Samsung</b>
         </div>
       </div>
+
+      <!-- 2012 -->
       <div class="container right">
         <div class="content">
           <h2>2012</h2>
-          <h3 href="#">QA Engineer</h3>
+          <h3>QA Engineer</h3>
           <b>Mars Interactive</b>
         </div>
       </div>
+
+      <!-- 2010 -->
       <div class="container right">
         <div class="learning">
           <h2>2010</h2>
           <h3>QA</h3>
-          <b href="#">John Bries</b>
-            <p>Manual testing, STP, STR, STD, QC Automation, SQL</p>
+          <b>John Bries</b>
+          <p>Manual Testing, STP, STR, STD, QC Automation, SQL</p>
         </div>
       </div>
 
     </div>
+
     <i class="fa-solid fa-map fa-beat"></i>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MyWebsite | All Rights Reserved</p>
+  </footer>
+
+  <!-- External Scripts -->
+  <script src="javascript/timeline.js"></script>
+
 </body>
-<footer>
-  <p>@2025 Rony Levi</p>
-</footer>
 </html>

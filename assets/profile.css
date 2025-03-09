@@ -2,9 +2,12 @@ html {
     background-image: url('/images/huawei-mate-9-luxury-dark-gold-abstract-stock-14-10-2024-1728936550-hd-wallpaper.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
     animation: scrollVertical 10s linear infinite;
     width: 100%;
-    height: 120%;
+    height: -5%;
     background-color: #000;
     margin-top: -5%;
 }
@@ -16,7 +19,8 @@ html {
     color: #797565;
     text-align: center;
     border-radius: 10px;
-    font-size: 25px; /*the size of my name*/
+    font-size: 25px;
+    /*the size of my name*/
     padding: 20px;
     margin: 50px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -26,7 +30,7 @@ html {
 h2 {
     text-decoration: underline;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: xxx-large;
+    font-size: clamp(2rem, 5vw, 4rem);
     margin-top: 17vh;
 
 }
@@ -34,35 +38,44 @@ h2 {
 .title {
     position: static;
     top: 20%;
-    font-size: 20px; /*the size of the title*/
+    font-size: 1.2rem;
+    /*the size of the title*/
     color: #797565;
 }
 
 /* Social Icons */
 .card a {
     text-decoration: none;
+    width: 90%;
+    max-width: 350px;
     color: #797565;
-    margin: 0 10px; /*the space between icons*/
-    font-size: 30px; /*the size of the icons*/
+    margin: 0 10px;
+    /*the space between icons*/
+    font-size: 30px;
+    /*the size of the icons*/
 }
 
 .card a:hover {
     color: #ffcc00;
 }
 
-.card a.envelope:hover{
+.card a.envelope:hover {
     color: #DB4437
 }
-.card a.github:hover{
+
+.card a.github:hover {
     color: #e9e9e9
 }
-.card a.linkedin:hover{
+
+.card a.linkedin:hover {
     color: #0077b5
 }
-.card a.phone:hover{
+
+.card a.phone:hover {
     color: #aa4caf
 }
-.card a.whatsapp:hover{
+
+.card a.whatsapp:hover {
     color: #25D366
 }
 
@@ -78,6 +91,10 @@ h2 {
     border-radius: 5px;
     transition: 0.3s;
     margin-top: 20px;
+    width: auto;
+    /* Avoid forced full-width */
+    display: block;
+    margin: 10px auto;
 }
 
 .card button:hover {
@@ -99,8 +116,8 @@ h2 {
 
 .a {
     text-decoration: none;
-    font-size: 22px;
-    color: black;
+    font-size: 1.2rem;
+    color: #e6b800;
     background-color: rgb(152, 152, 116);
 }
 
@@ -113,6 +130,10 @@ h2 {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    width: auto;
+    /* Avoid forced full-width */
+    display: block;
+    margin: 10px auto;
 }
 
 .reply-button:hover {
@@ -121,4 +142,13 @@ h2 {
 
 h2 {
     color: #797565;
+}
+
+footer {
+    color: #f6f6f6;
+    background-color: #797565;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 0%;
+    height: 50px;
 }

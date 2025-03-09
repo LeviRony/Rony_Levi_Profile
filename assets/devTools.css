@@ -1,5 +1,5 @@
 html {
-    background-image: url('/images/huawei-mate-9-luxury-dark-gold-abstract-stock-14-10-2024-1728936550-hd-wallpaper.jpg');
+    background-image: url('../images/huawei-mate-9-luxury-dark-gold-abstract-stock-14-10-2024-1728936550-hd-wallpaper.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     animation: scrollVertical 10s linear infinite;
@@ -10,8 +10,10 @@ html {
 /* Container for the grid */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
-    gap: 20px; /* Space between grid items */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 equal-width columns */
+    gap: 20px;
+    /* Space between grid items */
     padding: 20px;
 }
 
@@ -20,7 +22,7 @@ html {
     border: 2px solid #ddd;
     padding: 10px;
     text-align: center;
-    background-color: #797565;
+    background-color: #e8e6e6d4;
 }
 
 /* Image styling */
@@ -40,10 +42,22 @@ html {
     font-size: 1em;
     color: #ffffff;
 }
-h1{
+
+h1 {
     margin-top: 15%;
     font-size: 1em;
     color: #e9e6e6;
     text-align: center;
 
+}
+
+footer {
+    color: #f6f6f6;
+    background-color: #797565;
+    ;
+    padding: 10px;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 0%;
+    height: 50px;
 }
