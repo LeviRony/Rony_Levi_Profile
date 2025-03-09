@@ -1,10 +1,12 @@
 html {
-    background-image: url('https://applescoop.org/image/wallpapers/mac/huawei-mate-9-luxury-dark-gold-abstract-stock-14-10-2024-1728936550-hd-wallpaper.jpg');
+    background-image: url('/images/huawei-mate-9-luxury-dark-gold-abstract-stock-14-10-2024-1728936550-hd-wallpaper.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    animation: scrollVertical 10s linear infinite;
     width: 100%;
-    height: 100%;
-
+    height: 120%;
+    background-color: #000;
+    margin-top: -5%;
 }
 
 /* Centered card */
@@ -14,11 +16,11 @@ html {
     color: #797565;
     text-align: center;
     border-radius: 10px;
+    font-size: 25px; /*the size of my name*/
     padding: 20px;
     margin: 50px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
-    margin-top: 5vh;
 }
 
 h2 {
@@ -32,7 +34,7 @@ h2 {
 .title {
     position: static;
     top: 20%;
-    font-size: 18px;
+    font-size: 20px; /*the size of the title*/
     color: #797565;
 }
 
@@ -40,8 +42,8 @@ h2 {
 .card a {
     text-decoration: none;
     color: #797565;
-    margin: 0 10px;
-    font-size: 20px;
+    margin: 0 10px; /*the space between icons*/
+    font-size: 30px; /*the size of the icons*/
 }
 
 .card a:hover {
@@ -102,6 +104,7 @@ h2 {
     background-color: rgb(152, 152, 116);
 }
 
+/* Reply me back */
 .reply-button {
     background-color: #797565;
     color: rgb(45, 42, 42);

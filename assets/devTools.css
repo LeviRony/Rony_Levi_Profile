@@ -1,0 +1,49 @@
+html {
+    background-image: url('/images/huawei-mate-9-luxury-dark-gold-abstract-stock-14-10-2024-1728936550-hd-wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: scrollVertical 10s linear infinite;
+    background-color: #000;
+    margin-top: -5%;
+}
+
+/* Container for the grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+}
+
+/* Individual grid item */
+.grid-item {
+    border: 2px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Image styling */
+.grid-item img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Text under the image */
+.grid-item h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.grid-item p {
+    font-size: 1em;
+    color: #797565;
+}
+h1{
+    margin-top: 15%;
+    font-size: 1em;
+    color: #e9e6e6;
+    text-align: center;
+
+}
