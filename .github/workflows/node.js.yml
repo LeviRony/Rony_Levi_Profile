@@ -12,7 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: Ronys-Mac-mini-3
 
     strategy:
       matrix:
