@@ -1,39 +1,42 @@
+/* Apply background image to the entire page */
 html {
     background-image: url('/images/huawei-mate-9-luxury-dark-gold-abstract-stock-14-10-2024-1728936550-hd-wallpaper.jpg');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    animation: scrollVertical 10s linear infinite;
+    background-attachment: fixed; /* Fixes scrolling issues */
     width: 100%;
+    min-height: 100%; 
     background-color: #000;
-    margin-top: -5%;
-    z-index: -1;
 }
-/* Basic reset and body styling */
+
+/* Flexbox-centered layout */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
-    z-index: 1;
+    min-height: 100vh; /* Prevents mobile cutoff issues */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
 }
 
-/* Container for the "Under Construction" message */
+/* Main container */
 .container {
     text-align: center;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     max-width: 600px;
-    width: 100%;
+    width: 90%; /* Responsive width */
+    margin-left: 50%;
+    
 }
 
 /* Heading styling */
 h1 {
-    font-size: 3em;
+    font-size: 2.5em; /* Adjusted for responsiveness */
     color: #FF6347;
     margin-bottom: 20px;
 }
@@ -42,13 +45,15 @@ h1 {
 p {
     font-size: 1.2em;
     color: #333;
+    line-height: 1.6; /* Improves readability */
 }
 
-/* Optional: Adding an image or icon for construction theme */
+/* Under construction icon */
 .icon {
     margin: 20px 0;
 }
 
 .icon img {
-    width: 100px;
+    width: 80px; /* Slightly smaller for better balance */
+    max-width: 100%;
 }
