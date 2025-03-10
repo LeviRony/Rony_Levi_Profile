@@ -1,0 +1,8 @@
+footer {
+    color: #f6f6f6;
+    background-color: #797565;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 0;
+    height: 50px; /* This will ensure it maintains a consistent size */
+  }

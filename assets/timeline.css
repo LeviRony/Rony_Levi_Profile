@@ -4,23 +4,26 @@
 }
 
 html {
-  background-color: #000;
-  width: 100%;
+  background-image: url('/images/huawei-mate-9-luxury-dark-gold-abstract-stock-14-10-2024-1728936550-hd-wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh; /* Fixes small screen scaling */
+    background-color: #000;
+    background-position: 50%;
+    overflow: scroll;
+    margin-top: 7%;
+    padding: 0;
+    height: 100%;
 }
 
 /* Set a background color */
 body {
   color: aliceblue;
   font-family: Helvetica, sans-serif;
-  background-image: url('https://applescoop.org/image/wallpapers/mac/huawei-mate-9-luxury-dark-gold-abstract-stock-14-10-2024-1728936550-hd-wallpaper.jpg');
-  background-size: cover;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  overflow: scroll;
-  margin-top: 7%;
-  padding: 0;
-  height: 100%;
+ 
 }
 
 /* My Journey title */
@@ -35,7 +38,7 @@ body {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 10%;
+  margin-top: 6%;
   /* timeline top edge */
   margin-bottom: 2%;
   /* timeline bottom edge from PIN icon*/
@@ -204,11 +207,12 @@ p {
 }
 
 /* PIN location icons - top */
-.fa-map-pin {
+.fa-flag-checkered {
   display: block;
   text-align: center;
   font-size: 100px;
   color: #FF9F55;
+  margin-left: 5rem;
   margin-top: 0%;
 }
 
@@ -216,15 +220,7 @@ p {
 .fa-map {
   color: #FF9F55;
   font-size: 120px;
-  margin-left: 45%;
+  margin-left: 47%;
   margin-bottom: 15%;
 }
 
-footer {
-  color: #f6f6f6;
-  background-color: #797565;
-  padding: 10px;
-  text-align: center;
-  margin-bottom: 0;
-  height: 50px; /* This will ensure it maintains a consistent size */
-}
