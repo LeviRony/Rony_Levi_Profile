@@ -2,10 +2,12 @@
   box-sizing: border-box;
 
 }
-html{
+
+html {
   background-color: #000;
 
 }
+
 /* Set a background color */
 body {
   color: aliceblue;
@@ -31,8 +33,10 @@ body {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 10%; /* timeline top edge */
-  margin-bottom: 2%; /* timeline bottom edge from PIN icon*/
+  margin-top: 10%;
+  /* timeline top edge */
+  margin-bottom: 2%;
+  /* timeline bottom edge from PIN icon*/
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -196,6 +200,7 @@ p {
   text-align: left;
   font-size: medium;
 }
+
 /* PIN location icons - top */
 .fa-map-pin {
   display: block;
@@ -204,6 +209,7 @@ p {
   color: #FF9F55;
   margin-top: 0%;
 }
+
 /* PIN location icons - bottom */
 .fa-map {
   color: #FF9F55;
