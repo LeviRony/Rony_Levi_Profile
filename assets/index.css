@@ -6,7 +6,7 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
-    min-height: 100vh, fit-content; /* Fixes small screen scaling */
+    min-height: 100vh; /* Fixes small screen scaling */
     background-color: #000;
 }
 
@@ -30,19 +30,17 @@ main {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    max-width: 6000px;
+    max-width: 100%; /* More responsive */
     width: 90%;
-    margin: auto; /* Centering fix */
+    margin: auto;
 }
 
-/* Heading styling with auto-resize */
 h1 {
-    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-size: clamp(1.5rem, 5vw, 2.5rem); /* Responsive font size */
     color: #FF6347;
     margin-bottom: 20px;
 }
 
-/* Message styling */
 p {
     font-size: clamp(1rem, 3vw, 1.2rem);
     color: #333;
@@ -59,17 +57,27 @@ p {
     max-width: 100%;
 }
 
-/* Responsive Fixes for Smaller Screens */
 @media (max-width: 768px) {
     body {
-        display: block; /* Fixes mobile alignment */
+        display: block;
         padding: 20px;
     }
     
     .container {
         width: 95%;
-        max-width: 90%;
         padding: 20px;
+    }
+
+    h1 {
+        font-size: clamp(1.2rem, 6vw, 2rem); /* Adjust h1 size for smaller screens */
+    }
+
+    p {
+        font-size: clamp(0.9rem, 4vw, 1.1rem); /* Adjust paragraph size */
+    }
+
+    .icon img {
+        width: 150px; /* Resize icon for smaller screens */
     }
 }
 footer {
@@ -77,6 +85,6 @@ footer {
     background-color: #797565;
     padding: 10px;
     text-align: center;
-    margin-bottom: 0%;
-    height: 50px, fit-content;
+    margin-bottom: 0;
+    height: 50px; /* This will ensure it maintains a consistent size */
 }

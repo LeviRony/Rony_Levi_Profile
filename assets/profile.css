@@ -4,36 +4,66 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    overflow: hidden;
+    background-attachment: scroll;
+    overflow: scroll;
     animation: scrollVertical 10s linear infinite;
     width: 100%;
-    height: -5%;
+    height: 100vh;
+    /* Changed to cover the entire viewport height */
     background-color: #000;
-    margin-top: -5%;
+    margin-top: 0;
 }
 
 /* Centered card */
 .card {
-    width: 350px;
+    width: 90%;
+    /* Make it responsive */
+    max-width: 350px;
     background: rgba(0, 0, 0, 0.6);
     color: #797565;
     text-align: center;
     border-radius: 10px;
-    font-size: 25px;
-    /*the size of my name*/
+    font-size: 2vw;
+    /* Responsive font size */
     padding: 20px;
     margin: 50px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
 }
 
+
 h2 {
     text-decoration: underline;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: clamp(2rem, 5vw, 4rem);
+    /* Dynamic font size */
     margin-top: 17vh;
-
 }
+
+/* For smaller screens (like mobile devices) */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        font-size: 4vw;
+        /* Font size adjusts on smaller screens */
+    }
+
+    h2 {
+        font-size: clamp(1.5rem, 4vw, 3rem);
+        margin-top: 10vh;
+        /* Adjust the position for mobile */
+    }
+}
+
+/* For larger screens (like tablets and desktops) */
+@media (min-width: 769px) {
+    .card {
+        width: 350px;
+        /* Fixed width for larger screens */
+        font-size: 25px;
+    }
+}
+
 
 .title {
     position: static;
@@ -140,7 +170,7 @@ h2 {
     background-color: #e6b800;
 }
 
-h2 {
+h2 { /* "Reply to My Message" title */
     color: #797565;
 }
 
@@ -149,6 +179,7 @@ footer {
     background-color: #797565;
     padding: 10px;
     text-align: center;
-    margin-bottom: 0%;
+    margin-bottom: 0;
     height: 50px;
+    /* This will ensure it maintains a consistent size */
 }
