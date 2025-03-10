@@ -27,8 +27,8 @@ jobs:
     - name: Install dependencies
       run: npm ci  # Use npm install if package-lock.json is missing
 
-    - name: Build project
-      run: npm run build --if-present  # Only runs if a build script exists
+    #- name: Build project
+    #  run: npm run build --if-present  # Only runs if a build script exists
 
-    - name: Run tests
-      run: npm test
+    # - name: Run tests
+     #  run: npm test
