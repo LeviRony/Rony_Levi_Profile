@@ -12,7 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: Ronys-Mac-mini-3
+    runs-on: self-hosted
 
     strategy:
       matrix:
