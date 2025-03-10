@@ -1,22 +1,28 @@
-*{box-sizing: border-box; }
-body{
-  margin: 0; padding: 0px; font-family: 'Poppins', sans-serif;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
 }
 
 
 
 
-.bg-lnir{background-image: linear-gradient(to right, #8490ff , #a3eeff);
+.bg-lnir {
+    background-image: linear-gradient(to right, #8490ff, #a3eeff);
 }
 
-::selection{
+::selection {
     color: aliceblue;
     background: #7c9cfe;
-    
+
 }
 
-  /* Background setup */
-  html {
+/* Background setup */
+html {
     /* background-image: url('/images/huawei-mate-9-luxury-dark-gold-abstract-stock-14-10-2024-1728936550-hd-wallpaper.jpg'); */
     background-size: cover;
     background-position: center;
@@ -27,42 +33,51 @@ body{
     background-color: #000;
     overflow-x: hidden;
     overflow-y: auto;
-  }
+}
 
 /****************** start tools section *********************/
 
-.tools{
+.tools {
     padding: 40px 50px;
 }
 
-.tools .tools-progres{}
-.tools .tools-progres .progres{
+.tools .tools-progres {}
+
+.tools .tools-progres .progres {
     width: 50%;
     float: left;
     position: relative;
     padding-bottom: 60px;
 }
-.tools .tools-progres .progres:nth-child(odd){
+
+.tools .tools-progres .progres:nth-child(odd) {
     padding-right: 20px;
 }
-.tools .tools-progres .progres:nth-child(odd) p{right: 20px;}
-.tools .tools-progres .progres:nth-child(even){
+
+.tools .tools-progres .progres:nth-child(odd) p {
+    right: 20px;
+}
+
+.tools .tools-progres .progres:nth-child(even) {
     padding-left: 20px;
 }
-.tools .tools-progres .progres p{
+
+.tools .tools-progres .progres p {
     float: left;
     font-size: 13px;
-    color: #7c9cfe; /* system name */
+    color: #7c9cfe;
+    /* system name */
     background-color: #00000059;
     font-size: 16px;
     margin: 0;
     position: absolute;
     top: -25px;
     right: 0;
-    
+
 }
+
 /* Exprt text section */
-a{
+a {
     float: left;
     font-size: 13px;
     background-color: #00000059;
@@ -72,11 +87,15 @@ a{
     top: 25px;
     left: 89%;
 }
+
 @keyframes beat {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
         opacity: 1;
     }
+
     50% {
         transform: scale(1.2);
         opacity: 0.8;
@@ -92,7 +111,7 @@ a{
 }
 
 /* ---------------- */
-.tools .tools-progres .progres .prog{
+.tools .tools-progres .progres .prog {
     width: 100%;
     background-color: #dddddd;
     border: 3px solid #eeeeee;
@@ -100,12 +119,10 @@ a{
     height: 14px;
     position: relative;
 }
-.tools .tools-progres .progres .prog span{
-    
+
+.tools .tools-progres .progres .prog span {
+
     position: absolute;
     height: 100%;
     border-radius: 15px;
 }
-
-
-@
