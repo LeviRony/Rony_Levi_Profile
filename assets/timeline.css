@@ -181,8 +181,14 @@ b:hover {
 b {
   font-size: medium;
   color: rgb(2, 3, 3);
+  text-decoration: none;
 }
-
+h2{
+  color: #4f3c2e;
+}
+h3{
+  font-size: xx-large;
+}
 /* Learn subjects */
 p {
   color: rgb(199, 199, 184);
