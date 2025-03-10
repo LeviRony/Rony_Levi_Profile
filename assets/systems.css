@@ -41,8 +41,6 @@ html {
     padding: 40px 50px;
 }
 
-.tools .tools-progres {}
-
 .tools .tools-progres .progres {
     width: 50%;
     float: left;
@@ -74,6 +72,22 @@ html {
     top: -25px;
     right: 0;
 
+}
+
+.tools .tools-progres .progres .prog {
+    width: 100%;
+    background-color: #dddddd;
+    border: 3px solid #eeeeee;
+    border-radius: 15px;
+    height: 14px;
+    position: relative;
+}
+
+.tools .tools-progres .progres .prog span {
+
+    position: absolute;
+    height: 100%;
+    border-radius: 15px;
 }
 
 /* Exprt text section */
@@ -111,18 +125,3 @@ a {
 }
 
 /* ---------------- */
-.tools .tools-progres .progres .prog {
-    width: 100%;
-    background-color: #dddddd;
-    border: 3px solid #eeeeee;
-    border-radius: 15px;
-    height: 14px;
-    position: relative;
-}
-
-.tools .tools-progres .progres .prog span {
-
-    position: absolute;
-    height: 100%;
-    border-radius: 15px;
-}
