@@ -1,31 +1,32 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* Background setup */
 html {
-  background-image: url('/images/huawei-mate-9-luxury-dark-gold-abstract-stock-14-10-2024-1728936550-hd-wallpaper.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 100vh;
-  /* Ensures full-screen coverage */
-  background-color: #000;
-  overflow-x: hidden;
-  overflow-y: auto;
+    background-image: url('/images/huawei-mate-9-luxury-dark-gold-abstract-stock-14-10-2024-1728936550-hd-wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    /* Ensures full-screen coverage */
+    background-color: #000;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /* Centered card */
 .card {
     width: 90%;
     /* Make it responsive */
-    max-width: 350px;
-    background: rgba(0, 0, 0, 0.6);
+    max-width: 450px;
+    background: rgba(149, 19, 19, 0.709);
     color: #797565;
     text-align: center;
+    align-items: center;
     border-radius: 10px;
     font-size: 2vw;
     /* Responsive font size */
@@ -35,13 +36,18 @@ html {
     backdrop-filter: blur(5px);
 }
 
+textarea {
+    width: 19.5rem;
+    height: 15rem;
+    align-items: center;
+}
 
 h2 {
     text-decoration: underline;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: clamp(2rem, 5vw, 4rem);
     /* Dynamic font size */
-    margin-top: 17vh;
+    margin-top: 10vh;
 }
 
 /* For smaller screens (like mobile devices) */
@@ -106,7 +112,7 @@ h2 {
 }
 
 .card a.phone:hover {
-    color: #aa4caf
+    color: #ffcc00
 }
 
 .card a.whatsapp:hover {
@@ -167,16 +173,28 @@ h2 {
     width: auto;
     /* Avoid forced full-width */
     display: block;
-    margin: 10px auto;
+    margin: 0px auto;
 }
 
 .reply-button:hover {
-    background-color: #e6b800;
+    font-weight: bold;
+    font-size: 16.5px;
 }
-
-h2 { /* "Reply to My Message" title */
+/* "Reply to My Message" title */
+.card h2 {
+    
     color: #797565;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
+.card p{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+label .message{
+    margin-bottom: 20px;
+} 
+
 /* Footer that always stays at the bottom */
 footer {
     color: #bbb9b9;
@@ -186,18 +204,21 @@ footer {
     text-align: center;
     height: 50px;
     width: 100%;
-    position: relative; /* Default position */
+    position: relative;
+    /* Default position */
     bottom: 0;
-  }
-  
-  
-  .main-content {
-    flex: 1; /* Pushes the footer down */
-  }
-  
-  /* Fix for small screens with lots of scrolling */
-  @media (max-height: 600px) {
+}
+
+
+.main-content {
+    flex: 1;
+    /* Pushes the footer down */
+}
+
+/* Fix for small screens with lots of scrolling */
+@media (max-height: 600px) {
     footer {
-      position: static; /* Prevents overlap on very short screens */
+        position: static;
+        /* Prevents overlap on very short screens */
     }
-  }
+}
