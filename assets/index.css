@@ -1,13 +1,24 @@
 /* Apply background image to the entire page */
 html {
+    height: 100%;
     background-image: url('/images/huawei-mate-9-luxury-dark-gold-abstract-stock-14-10-2024-1728936550-hd-wallpaper.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Fixes scrolling issues */
-    width: 100%;
-    min-height: 100%; 
+    background-attachment: fixed;
     background-color: #000;
+}
+
+/* Dark overlay for readability */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
 /* Flexbox-centered layout */
@@ -17,35 +28,37 @@ body {
     padding: 0;
     display: flex;
     align-items: center;
-    min-height: 100vh; /* Prevents mobile cutoff issues */
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    justify-content: center;
+    min-height: 100vh;
 }
 
 /* Main container */
 .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    width: 90%; /* Responsive width */
-    margin-left: 50%;
-    
+    max-width: 90vw;
+    width: 100%;
 }
 
 /* Heading styling */
 h1 {
-    font-size: 2.5em; /* Adjusted for responsiveness */
+    font-size: clamp(1.8em, 5vw, 2.5em);
     color: #FF6347;
     margin-bottom: 20px;
 }
 
 /* Message styling */
 p {
-    font-size: 1.2em;
+    font-size: clamp(1em, 2.5vw, 1.2em);
     color: #333;
-    line-height: 1.6; /* Improves readability */
+    line-height: 1.6;
 }
 
 /* Under construction icon */
@@ -54,6 +67,6 @@ p {
 }
 
 .icon img {
-    width: 80px; /* Slightly smaller for better balance */
+    width: 80px;
     max-width: 100%;
 }
