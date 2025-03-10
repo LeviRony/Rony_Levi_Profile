@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/LeviRony/Rony_Levi_Profile/issues"
   },
-  "homepage": "https://github.com/LeviRony/Rony_Levi_Profile#readme"
+  "homepage": "https://github.com/LeviRony/Rony_Levi_Profile#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
