@@ -1,13 +1,22 @@
-html {
-    background-image: url('../images/huawei-mate-9-luxury-dark-gold-abstract-stock-14-10-2024-1728936550-hd-wallpaper.jpg');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Background setup */
+  html {
+    background-image: url('/images/huawei-mate-9-luxury-dark-gold-abstract-stock-14-10-2024-1728936550-hd-wallpaper.jpg');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    animation: scrollVertical 10s linear infinite;
-    height: fit-content;
-    width: fit-content;
+    background-attachment: fixed;
+    min-height: 100vh;
+    /* Ensures full-screen coverage */
     background-color: #000;
-
-}
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
 
 /* Container for the grid */
 .grid-container {

@@ -12,7 +12,8 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-height: 100vh; /* Ensures full-screen coverage */
+  min-height: 100vh;
+  /* Ensures full-screen coverage */
   background-color: #000;
   overflow-x: hidden;
   overflow-y: auto;
@@ -37,7 +38,8 @@ body {
 .timeline {
   position: relative;
   max-width: 12000px;
-  margin: -10rem auto 0 auto; /* Centered with top margin */
+  margin: -10rem auto 0 auto;
+  /* Centered with top margin */
 }
 
 /* Timeline vertical line */
@@ -85,7 +87,8 @@ body {
 }
 
 /* Arrows for left and right containers */
-.left::before, .right::before {
+.left::before,
+.right::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -141,7 +144,8 @@ body {
     border-color: transparent white transparent transparent;
   }
 
-  .left::after, .right::after {
+  .left::after,
+  .right::after {
     left: 15px;
   }
 
