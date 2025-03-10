@@ -4,6 +4,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #797565;
+  justify-content: center;
   position: fixed;
   width: 100%;
   top: 0;
