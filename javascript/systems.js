@@ -1,9 +1,11 @@
-let level = 0;
+$(document).ready(function () {
+  $(".inner").each(function () {
+    var widthValue = $(this).attr("data-pg") || "0%"; // Default to 0%
+    
+    if (!widthValue.includes("%")) {
+      widthValue += "%"; // Ensure percentage
+    }
 
-function adjustLevel(change) {
-    level += change;
-    if (level < 0) level = 0;
-    if (level > 100) level = 100;
-
-    document.getElementById("dynamicFill").style.width = level + "%";
-}
+    $(this).animate({ width: widthValue }, 2000);
+  });
+});

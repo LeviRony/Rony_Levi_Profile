@@ -9,7 +9,7 @@
 html {
   background-image: url('/images/huawei-mate-9-luxury-dark-gold-abstract-stock-14-10-2024-1728936550-hd-wallpaper.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: calc();
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
@@ -30,9 +30,10 @@ body {
 .timeline-title {
   margin: 8rem auto 0 auto;
   margin-left: 3rem;
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: #ff9f559c;
+  color: #ec9d61;
+  text-align: center;
 }
 
 /* Timeline setup */

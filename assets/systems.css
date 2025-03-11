@@ -1,133 +1,441 @@
-/* Universal box-sizing */
-*,
-*::before,
-*::after {
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* Background setup */
 html {
-    background-image: url('./images/huawei-mate-9-wallpaper.jpg');
+    background-image: url('../images/huawei-mate-9-luxury-dark-gold-abstract-stock-14-10-2024-1728936550-hd-wallpaper.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: calc();
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
+    /* Ensures full-screen coverage */
     background-color: #000;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-
-}
-
-.timeline-title {
-    margin-top: 75px;
-    margin-left: 3rem;
-    color: #e6b800;
-}
-
-/* Gradient Background */
-.bg-lnir {
-    background-image: linear-gradient(to right, #8490ff, #a3eeff);
-}
-
-::selection {
-    color: aliceblue;
-    background: #7c9cfe;
-
-}
-
-/* Tools Section */
-.tools {
-    padding: 40px 50px;
-}
-
-/* Progress Bar Styling */
-.tools .tools-progres .progres {
-    width: 50%;
-    float: left;
-    position: relative;
-    padding-bottom: 60px;
-}
-
-.tools .tools-progres .progres:nth-child(odd) {
-    padding-right: 20px;
-}
-
-
-
-.tools .tools-progres .progres:nth-child(even) {
-    padding-left: 20px;
-}
-
-/* Progress Bar Label */
-.tools .tools-progres .progres p {
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 16px;
-    margin: 0;
-    position: absolute;
-    top: -25px;
-
-    
-}
-
-.tools .tools-progres .progres .prog {
+.skills_chart * {
+    font-family: Nunito, sans-serif;
+  }
+  
+  .skills_chart .text-blk {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    line-height: 25px;
+  }
+  
+  .skills_chart .responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
     width: 100%;
-    background-color: #dddddd;
-    border: 3px solid #eeeeee;
-    border-radius: 15px;
-    height: 14px;
-    position: relative;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    justify-content: flex-start;
+  }
+  
+  .skills_chart .responsive-container-block.bg {
+    max-width: 1320px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-right: 10px;
+    padding-bottom: 80px;
+    padding-left: 10px;
+  }
+  
+  .skills_chart .text-blk.title {
+    font-size: 40px;
+    line-height: 47.74px;
+    font-weight: 700;
+    color: #eeeeee;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+  }
+  
+  .skills_chart .text-blk.info {
+    max-width: 496px;
+    font-size: 25px;
+    line-height: 34.1px;
+    color: #e5e5e5;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 26px;
+    margin-left: 0px;
+  }
+  
+  .skills_chart .responsive-container-block.prog-cont {
+    justify-content: space-between;
+    margin-bottom: 30%;
+
+  }
+  
+  .skills_chart .responsive-container-block.prog {
+    width: 48%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 8px;
+    margin-left: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .skills_chart .text-blk.head {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    font-size: 25px;
+    line-height: 34.1px;
+    color: #30b1e4fc;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+  }
+  
+  .skills_chart .responsive-container-block.outer {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    min-height: 15px;
+    background-color: #30b1e4fc;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+  
+  .skills_chart .responsive-container-block.inner {
+    width: 5%; /* Start with a small width for a smooth animation */
+    min-height: 15px;
+    background-color: rgba(104, 239, 154, 0.994);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+  
+  .skills_chart .responsive-container-block.inner.i1 {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    width: 0px;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+  }
+  
+  .skills_chart .responsive-container-block.inner.i2 {
+    width: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+  }
+  
+  .skills_chart .responsive-container-block.inner.i3 {
+    width: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+  }
+  
+  .skills_chart .responsive-container-block.big-cont {
+    justify-content: center;
+  }
+  
+  @media (max-width: 1024px) {
+    .skills_chart .responsive-container-block.prog {
+      width: 49%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .skills_chart .responsive-container-block.prog {
+      width: 85%;
+    }
+  
+    .skills_chart .responsive-container-block.prog-cont {
+      justify-content: space-evenly;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .skills_chart .responsive-container-block.prog {
+      width: 100%;
+    }
+  
+    .skills_chart .text-blk.title {
+      font-size: 31px;
+      line-height: 41px;
+    }
+  
+    .skills_chart .text-blk.info {
+      font-size: 22px;
+      line-height: 32px;
+    }
+  
+    .skills_chart .text-blk.head {
+      font-size: 22px;
+      line-height: 32px;
+    }
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.tools .tools-progres .progres .prog span {
+body {
+  margin: 0;
+}
 
-    position: absolute;
-    height: 100%;
+.wk-desk-1 {
+  width: 8.333333%;
+}
+
+.wk-desk-2 {
+  width: 16.666667%;
+}
+
+.wk-desk-3 {
+  width: 25%;
+}
+
+.wk-desk-4 {
+  width: 33.333333%;
+}
+
+.wk-desk-5 {
+  width: 41.666667%;
+}
+
+.wk-desk-6 {
+  width: 50%;
+}
+
+.wk-desk-7 {
+  width: 58.333333%;
+}
+
+.wk-desk-8 {
+  width: 66.666667%;
+}
+
+.wk-desk-9 {
+  width: 75%;
+}
+
+.wk-desk-10 {
+  width: 83.333333%;
+}
+
+.wk-desk-11 {
+  width: 91.666667%;
+}
+
+.wk-desk-12 {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .wk-ipadp-1 {
+    width: 8.333333%;
+  }
+
+  .wk-ipadp-2 {
+    width: 16.666667%;
+  }
+
+  .wk-ipadp-3 {
+    width: 25%;
+  }
+
+  .wk-ipadp-4 {
+    width: 33.333333%;
+  }
+
+  .wk-ipadp-5 {
+    width: 41.666667%;
+  }
+
+  .wk-ipadp-6 {
     width: 50%;
-    /* Dynamic */
-    border-radius: 15px;
-    background-color: #7c9cfe;
-    /* Blue */
+  }
+
+  .wk-ipadp-7 {
+    width: 58.333333%;
+  }
+
+  .wk-ipadp-8 {
+    width: 66.666667%;
+  }
+
+  .wk-ipadp-9 {
+    width: 75%;
+  }
+
+  .wk-ipadp-10 {
+    width: 83.333333%;
+  }
+
+  .wk-ipadp-11 {
+    width: 91.666667%;
+  }
+
+  .wk-ipadp-12 {
+    width: 100%;
+  }
 }
 
-/* Link Button Fix */
-a,
-p {
-    position: absolute;
-    top: 25px;
-    right: 10px;
-    font-size: 16px;
-    background-color: #00000059;
+@media (max-width: 768px) {
+  .wk-tab-1 {
+    width: 8.333333%;
+  }
+
+  .wk-tab-2 {
+    width: 16.666667%;
+  }
+
+  .wk-tab-3 {
+    width: 25%;
+  }
+
+  .wk-tab-4 {
+    width: 33.333333%;
+  }
+
+  .wk-tab-5 {
+    width: 41.666667%;
+  }
+
+  .wk-tab-6 {
+    width: 50%;
+  }
+
+  .wk-tab-7 {
+    width: 58.333333%;
+  }
+
+  .wk-tab-8 {
+    width: 66.666667%;
+  }
+
+  .wk-tab-9 {
+    width: 75%;
+  }
+
+  .wk-tab-10 {
+    width: 83.333333%;
+  }
+
+  .wk-tab-11 {
+    width: 91.666667%;
+  }
+
+  .wk-tab-12 {
+    width: 100%;
+  }
 }
 
+@media (max-width: 500px) {
+  .wk-mobile-1 {
+    width: 8.333333%;
+  }
 
-/* Beating Text Animation */
-@keyframes beat {
+  .wk-mobile-2 {
+    width: 16.666667%;
+  }
 
-    0%,
-    100% {
-        transform: scale(1);
-        opacity: 1;
+  .wk-mobile-3 {
+    width: 25%;
+  }
+
+  .wk-mobile-4 {
+    width: 33.333333%;
+  }
+
+  .wk-mobile-5 {
+    width: 41.666667%;
+  }
+
+  .wk-mobile-6 {
+    width: 50%;
+  }
+
+  .wk-mobile-7 {
+    width: 58.333333%;
+  }
+
+  .wk-mobile-8 {
+    width: 66.666667%;
+  }
+
+  .wk-mobile-9 {
+    width: 75%;
+  }
+
+  .wk-mobile-10 {
+    width: 83.333333%;
+  }
+
+  .wk-mobile-11 {
+    width: 91.666667%;
+  }
+
+  .wk-mobile-12 {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+    .skills_chart .responsive-container-block.prog {
+      width: 100%;
+      flex-direction: column; /* Stack elements on small screens */
     }
-
-    50% {
-        transform: scale(1.2);
-        opacity: 0.8;
-    }
-}
-
-.beat-text {
-    display: inline-block;
-    color: #25f205;
-    animation: beat 2.5s infinite;
-
-
-}
-
+  }
