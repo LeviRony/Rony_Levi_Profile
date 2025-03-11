@@ -1,16 +1,37 @@
-* {
+/* Universal box-sizing */
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+}
+
+/* Background setup */
+html {
+    background-image: url('./images/huawei-mate-9-wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-color: #000;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 body {
     margin: 0;
-    padding: 0px;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
+
 }
 
+.timeline-title {
+    margin-top: 75px;
+    margin-left: 3rem;
+    color: #e6b800;
+}
 
-
-
+/* Gradient Background */
 .bg-lnir {
     background-image: linear-gradient(to right, #8490ff, #a3eeff);
 }
@@ -21,26 +42,12 @@ body {
 
 }
 
-/* Background setup */
-html {
-    /* background-image: url('/images/huawei-mate-9-luxury-dark-gold-abstract-stock-14-10-2024-1728936550-hd-wallpaper.jpg'); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
-    /* Ensures full-screen coverage */
-    background-color: #000;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-/****************** start tools section *********************/
-
+/* Tools Section */
 .tools {
     padding: 40px 50px;
 }
 
+/* Progress Bar Styling */
 .tools .tools-progres .progres {
     width: 50%;
     float: left;
@@ -52,26 +59,22 @@ html {
     padding-right: 20px;
 }
 
-.tools .tools-progres .progres:nth-child(odd) p {
-    right: 20px;
-}
+
 
 .tools .tools-progres .progres:nth-child(even) {
     padding-left: 20px;
 }
 
+/* Progress Bar Label */
 .tools .tools-progres .progres p {
-    float: left;
-    font-size: 13px;
-    color: #7c9cfe;
-    /* system name */
-    background-color: #00000059;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 16px;
     margin: 0;
     position: absolute;
     top: -25px;
-    right: 0;
 
+    
 }
 
 .tools .tools-progres .progres .prog {
@@ -87,21 +90,25 @@ html {
 
     position: absolute;
     height: 100%;
+    width: 50%;
+    /* Dynamic */
     border-radius: 15px;
+    background-color: #7c9cfe;
+    /* Blue */
 }
 
-/* Exprt text section */
-a {
-    float: left;
-    font-size: 13px;
-    background-color: #00000059;
-    font-size: 16px;
-    margin: 0;
+/* Link Button Fix */
+a,
+p {
     position: absolute;
     top: 25px;
-    left: 89%;
+    right: 10px;
+    font-size: 16px;
+    background-color: #00000059;
 }
 
+
+/* Beating Text Animation */
 @keyframes beat {
 
     0%,
@@ -117,11 +124,10 @@ a {
 }
 
 .beat-text {
-    font-size: 2rem;
-    font-weight: bold;
-    color: rgb(238, 203, 119);
     display: inline-block;
-    animation: beat 1s infinite;
+    color: #25f205;
+    animation: beat 2.5s infinite;
+
+
 }
 
-/* ---------------- */
