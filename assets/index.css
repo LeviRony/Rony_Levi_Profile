@@ -2,11 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
-  /* Background setup */
-  html {
-    background-image: url('/images/huawei-mate-9-luxury-dark-gold-abstract-stock-14-10-2024-1728936550-hd-wallpaper.jpg');
+}
+
+/* Background setup */
+html {
+    background-image: url('https://i.pinimg.com/736x/30/8f/2f/308f2fd627c36e007527bc50337f6c7b.jpg');
     background-size: cover;
     background-position: calc();
     background-repeat: no-repeat;
@@ -16,86 +16,96 @@
     background-color: #000;
     overflow-x: hidden;
     overflow-y: auto;
-  }
+    z-index: -1;
+}
 
 /* Flexbox-centered layout for all screen heights */
-main {
-    font-family: Arial, sans-serif;
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensures full height usage */
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
-    padding-bottom: 7.5vh; /* Adjusts spacing instead of margin */
+    align-items: left;
+    min-height: 100vh;
+    /* Ensures full height usage */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark overlay */
+    padding-bottom: 7.5vh;
+    /* Adjusts spacing instead of margin */
 }
 
 /* Adjust layout for very small screens */
 @media (max-height: 600px) {
     main {
         justify-content: flex-start;
-        padding-top: 5vh; /* Avoids elements being too squeezed */
+        padding-top: 5vh;
+        /* Avoids elements being too squeezed */
         padding-bottom: 5vh;
     }
 }
 
+img {
+    margin-left: 70rem;
+    margin-top: -0vh;
+    z-index: 1;
+}
 
-/* Main container */
-.container {
+/* Welcome Section */
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.658);
-    padding: 30px;
+    padding: 50px 20px;
+    margin-right: 70%;
+    color: white;
+}
+
+.welcome-container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    max-width: 100%; /* More responsive */
-    width: 90%;
-    margin: auto;
+    max-width: 600px;
+}
+
+.welcome-container h1 {
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+
+.welcome-container p {
+    font-size: 28px;
+    line-height: 1.6;
+    margin-bottom: 10px;
 }
 
 h1 {
-    font-size: clamp(1.5rem, 5vw, 2.5rem); /* Responsive font size */
-    color: #d25625;
-    margin-bottom: 20px;
+    color: rgb(170, 142, 71);
+    font-size: 45px;
+    margin-top: -10rem;
+    margin-left: 2rem;
+    z-index: 0;
+   
 }
 
-p {
-    font-size: clamp(1rem, 3vw, 1.2rem);
-    color: #333;
-    line-height: 1.6;
+h2 {
+    color: rgb(170, 142, 71);
+    z-index: 0;
+    text-decoration: underline;
+    font-size: clamp(25px);
 }
 
-/* Under construction icon */
-.icon {
-    margin: 20px 0;
-}
-
-.icon img {
-    width: 400px;
-    max-width: 100%;
-}
-
-@media (max-width: 768px) {
-    body {
-        display: block;
-        padding: 20px;
-    }
+#bio {
+    /*font-family: Comic Sans MS, sans-serif;*/
+    max-width: 75rem;
+    color: white;
+    font-size: 25px;
+    padding: 15px;
+    text-align: left;
+    margin-left: 3rem;
+    line-height: 1.4;
     
-    .container {
-        width: 95%;
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: clamp(1.2rem, 6vw, 2rem); /* Adjust h1 size for smaller screens */
-    }
-
-    p {
-        font-size: clamp(0.9rem, 4vw, 1.1rem); /* Adjust paragraph size */
-    }
-
-    .icon img {
-        width: 150px; /* Resize icon for smaller screens */
-    }
 }
