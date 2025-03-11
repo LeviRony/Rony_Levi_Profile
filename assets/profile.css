@@ -47,7 +47,7 @@ h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: clamp(2rem, 5vw, 4rem);
     /* Dynamic font size */
-    margin-top: 10vh;
+    margin-top: 7vh;
 }
 
 /* For smaller screens (like mobile devices) */
@@ -182,7 +182,6 @@ h2 {
 }
 /* "Reply to My Message" title */
 .card h2 {
-    
     color: #797565;
     font-size: 2rem;
     margin-bottom: 20px;
