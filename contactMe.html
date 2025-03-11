@@ -4,46 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>📞 Contact Me</title>
-
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="./assets/profile.css">
+    <link rel="stylesheet" href="./assets/contactMe.css">
     <link rel="stylesheet" href="./assets/navbar.css">
     <link rel="stylesheet" href="./assets/footer.css">
 
     <!-- JavaScript -->
     <script src="./javascript/profile.js"></script>
-    <script src="./javascript/footer.js"></script>
 </head>
 
 <body>
-
     <!-- Header & Navigation -->
     <header>
         <nav class="navibar" aria-label="Main navigation">
             <ul>
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a class="active" href="homePage.html">Home</a></li>
                 <li><a href="timeline.html">Career</a></li>
-                <li><a href="systems.html">Experience</a></li>
-                <li><a href="profile.html">Contact</a></li>
+                <li><a href="skills.html">Experience</a></li>
+                <li><a href="contactMe.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-
     <!-- Contact Section -->
     <main>
         <h2 style="text-align: center; color: #9e977a;">Contact Me</h2>
-
         <div class="card">
-            <img src="./images/RonyL.jpeg" alt="Profile Picture" width="200" height="200" style="border-radius: 50%;">
-
+            <br>
             <h1>Rony Levi</h1>
-            <p class="title">Director of QA, Head of QA</p>
-
+            <br><br><br><br><br>
             <div style="margin: 24px 0;">
                 <a href="mailto:ronylevi99@gmail.com" class="envelope" aria-label="Send an email to Rony Levi"><i
                         class="fa fa-envelope"></i></a>
@@ -54,11 +46,10 @@
                 <a href="tel:+972544273287" class="phone" aria-label="Call Rony Levi"><i class="fa fa-phone"></i></a>
                 <a href="https://wa.me/972544273287" class="whatsapp" aria-label="Message Rony Levi on WhatsApp"><i
                         class="fa-brands fa-whatsapp"></i></a>
-
-                <br><br><br><br><br>
+                <br><br>
                 <!-- Message Reply Section -->
                 <p>Your reply is important to me. Please respond below:</p>
-
+                <br>
                 <form action="mailto:ronylevi99@gmail.com" method="post" enctype="text/plain">
                     <label for="message" style="display: block; margin-bottom: 10px;">Your Message</label>
                     <textarea id="message" name="message" rows="6" cols="50" placeholder="Type your reply here..."
@@ -69,11 +60,8 @@
             </div>
         </div>
     </main>
-
     <!-- Footer -->
-    <div id="footer-container"></div>
-
-
+    <script src="./javascript/footer.js"></script>
 </body>
 
 </html>

@@ -27,7 +27,7 @@ html {
     color: #797565;
     text-align: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 15px;
     font-size: 2vw;
     /* Responsive font size */
     padding: 20px;
@@ -38,7 +38,7 @@ html {
 
 textarea {
     width: 19.5rem;
-    height: 15rem;
+    height: 13rem;
     align-items: center;
 }
 
@@ -89,6 +89,7 @@ h2 {
     width: 90%;
     max-width: 350px;
     color: #797565;
+    
     margin: 0 10px;
     /*the space between icons*/
     font-size: 30px;
@@ -117,48 +118,6 @@ h2 {
 
 .card a.whatsapp:hover {
     color: #25D366
-}
-
-/* Contact Button */
-.card button {
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    background: #ffcc00;
-    color: #797565;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
-    margin-top: 20px;
-    width: auto;
-    /* Avoid forced full-width */
-    display: block;
-    margin: 10px auto;
-}
-
-.card button:hover {
-    background: #249ae3;
-}
-
-.button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-}
-
-.a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: #e6b800;
-    background-color: rgb(152, 152, 116);
 }
 
 /* Reply me back */
@@ -194,30 +153,4 @@ label .message{
     margin-bottom: 20px;
 } 
 
-/* Footer that always stays at the bottom */
-footer {
-    color: #bbb9b9;
-    font-size: larger;
-    background-color: #797565;
-    padding: 10px;
-    text-align: center;
-    height: 50px;
-    width: 100%;
-    position: relative;
-    /* Default position */
-    bottom: 0;
-}
 
-
-.main-content {
-    flex: 1;
-    /* Pushes the footer down */
-}
-
-/* Fix for small screens with lots of scrolling */
-@media (max-height: 600px) {
-    footer {
-        position: static;
-        /* Prevents overlap on very short screens */
-    }
-}

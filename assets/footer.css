@@ -1,35 +1,9 @@
-/* Ensures footer stays at the bottom */
-html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Main content expands, pushing footer down */
-main {
-  flex: 1;
-}
-
-/* Footer Styling */
 footer {
-  color: #bbb9b9;
-  font-size: larger;
   background-color: #797565;
-  padding: 10px;
+  color: bbb9b9;
   text-align: center;
-  height: 50px;
+  padding: 15px;
+  position: fixed; /* or 'absolute' if preferred */
+  bottom: 0;
   width: 100%;
-}
-
-/* Ensures footer always stays at the bottom */
-.footer-container {
-  margin-top: auto; /* Pushes footer down */
-}
-
-/* Fix for small screens with lots of scrolling */
-@media (max-height: 600px) {
-  html, body {
-      min-height: 100vh; /* Prevents footer overlap */
-  }
 }
