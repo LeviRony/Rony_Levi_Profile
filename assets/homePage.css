@@ -111,16 +111,18 @@ h2 {
 
 }
 
-.courses h2{
+.courses h2 {
     margin-left: 2%;
     max-width: 20rem;
     font-size: xx-large;
 }
-.systems h2{
+
+.systems h2 {
     margin-left: 2%;
     max-width: 20rem;
     font-size: xx-large;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -140,12 +142,13 @@ h2 {
     position: relative;
     width: 150px;
     height: 150px;
-    border-radius: 10px; /* Optional rounded corners for the images */
+    border-radius: 10px;
+    /* Optional rounded corners for the images */
     overflow: hidden;
     justify-content: center;
     align-items: center;
     margin: auto;
-    border-radius: 50%; 
+    border-radius: 50%;
 }
 
 .grid-item img {
@@ -163,7 +166,7 @@ h2 {
 }
 
 .row-container {
-    display: -webkit-box ;
+    display: -webkit-box;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
@@ -181,12 +184,13 @@ h2 {
     position: relative;
     width: 250px;
     height: 250px;
-    border-radius: 10px; /* Optional rounded corners for the images */
+    border-radius: 10px;
+    /* Optional rounded corners for the images */
     overflow: hidden;
     justify-content: center;
     align-items: center;
     margin: auto;
-    border-radius: 50%; 
+    border-radius: 50%;
 }
 
 .row-item img {
