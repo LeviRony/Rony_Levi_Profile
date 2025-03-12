@@ -8,7 +8,7 @@
 html {
     background-image: url('https://i.pinimg.com/736x/30/8f/2f/308f2fd627c36e007527bc50337f6c7b.jpg');
     background-size: cover;
-    background-position: calc();
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
@@ -46,9 +46,16 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .welcome {
+        flex-direction: column;
+        margin-right: 0;
+    }
+}
+
 img {
     margin-left: 70rem;
-    margin-top: -0vh;
+    margin-top: 10vh;
     z-index: 1;
 }
 
@@ -56,7 +63,8 @@ img {
 .welcome {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    ;
     flex: 1;
     text-align: center;
     padding: 50px 20px;
@@ -68,7 +76,8 @@ img {
     background: rgba(0, 0, 0, 0.6);
     padding: 40px;
     border-radius: 10px;
-    max-width: 600px;
+    max-width: 90%;
+    margin-top: -5vh;
 }
 
 .welcome-container h1 {
@@ -88,6 +97,7 @@ h1 {
     margin-top: -10rem;
     margin-left: 2rem;
     z-index: 0;
+    line-height: 1.4;
 
 }
 
@@ -95,8 +105,10 @@ h2 {
     color: rgb(170, 142, 71);
     z-index: 0;
     text-decoration: underline;
-    font-size: clamp(25px);
-    margin-left: 0;
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-left: 17.5rem;
+    line-height: 2;
+
 }
 
 #bio {
@@ -106,33 +118,83 @@ h2 {
     font-size: 25px;
     padding: 15px;
     text-align: left;
-    margin-left: 3rem;
+    margin-left: 50rem;
     line-height: 1.4;
-
+    width: 40%;
+    height: 200px;
+    margin-bottom: 5rem;
 }
 
 .courses h2 {
-    margin-left: 2%;
-    max-width: 20rem;
-    font-size: xx-large;
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-left: 22rem;
+    margin-top: 15rem;
 }
 
 .systems h2 {
-    margin-left: 2%;
-    max-width: 20rem;
-    font-size: xx-large;
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-left: 22rem;
+
 }
 
-.grid-container {
+.grid_1-container{
     display: grid;
+    width: 50%;
+    height: 50vh;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: -80px;
     padding: 20px;
     position: relative;
-    max-width: 100vh;
-    margin: 5%;
-    margin-top: 2%;
+    margin: 3%;
+    margin-top: -5%;
+    margin-left: 3.5%;
+    max-width: 80rem;
+    
 }
+.grid_2-container {
+    display: grid;
+    width: 50%;
+    height: 55vh;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: -80px;
+    padding: -50px;
+    position: relative;
+    margin: 3%;
+    margin-top: -19%;
+    margin-left: 10%;
+    max-width: 80rem;
+    
+}
+
+.grid_3-container{
+    display: grid;
+    width: 50%;
+    height: 50vh;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: -80px;
+    padding: -20px;
+    position: relative;
+    margin: 3%;
+    margin-top: -19%;
+    margin-left: 4.5%;
+    max-width: 80rem;
+    
+}
+.grid_4-container {
+    display: grid;
+    width: 50%;
+    height: 55vh;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: -80px;
+    padding: -50px;
+    position: relative;
+    margin: 3%;
+    margin-top: -20%;
+    margin-left: 5%;
+    max-width: 80rem;
+    
+}
+
 
 .grid-item {
     background: rgb(255, 255, 255);
@@ -146,18 +208,14 @@ h2 {
     /* Optional rounded corners for the images */
     overflow: hidden;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin: auto;
     border-radius: 50%;
 }
 
 .grid-item img {
-    width: 100%;
-    height: auto;
     border-radius: 5px;
     max-width: 150%;
-    margin-left: 20%;
-    object-fit: cover;
     margin: auto;
 }
 
@@ -165,19 +223,39 @@ h2 {
     margin-top: 10px;
 }
 
-.row-container {
+.grid-item img,
+.row-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.top_row-container {
     display: -webkit-box;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 180px;
     padding: 20px;
     position: relative;
-    margin: 5%;
-    margin-top: 5%;
+    margin: 1%;
+    margin-top: 3%;
+    margin-left: 5%;
+    max-width: 80rem;
+}
+.sec_row-container {
+    display: -webkit-box;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: -80px;
+    padding: 20px;
+    position: relative;
+    margin: 3%;
+    margin-top: 1%;
+    margin-left: 10%;
+    max-width: 80rem;
 }
 
 .row-item {
     background: rgb(255, 255, 255);
-    padding: 15px;
+    padding: 5px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -193,11 +271,8 @@ h2 {
 }
 
 .row-item img {
-    width: 100%;
-    height: auto;
     border-radius: 5px;
     max-width: 250%;
     margin-left: 20%;
-    object-fit: cover;
     margin: auto;
 }
