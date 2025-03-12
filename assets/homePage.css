@@ -161,7 +161,7 @@ h2 {
     text-align: left;
     margin-left: 50rem;
     line-height: 1.4;
-    width: 40%;
+    width: 40%, auto;
     height: 200px;
     margin-bottom: 5rem;
 }
@@ -186,10 +186,10 @@ h2 {
     gap: -80px;
     padding: 20px;
     position: relative;
-    margin: 3%;
+    margin: 3%, auto;
     margin-top: -5%;
     margin-left: 3.5%;
-    max-width: 80rem;
+    max-width: 80rem, auto;
 
 }
 
@@ -201,10 +201,10 @@ h2 {
     gap: -80px;
     padding: -50px;
     position: relative;
-    margin: 3%;
+    margin: 3%, auto;
     margin-top: -19%;
     margin-left: 10%;
-    max-width: 80rem;
+    max-width: 80rem, auto;
 
 }
 
@@ -216,10 +216,10 @@ h2 {
     gap: -80px;
     padding: -20px;
     position: relative;
-    margin: 3%;
+    margin: 3%, auto;
     margin-top: -19%;
     margin-left: 4.5%;
-    max-width: 80rem;
+    max-width: 80rem, auto;
 
 }
 
@@ -231,10 +231,10 @@ h2 {
     gap: -80px;
     padding: -50px;
     position: relative;
-    margin: 3%;
+    margin: 3%, auto;
     margin-top: -20%;
     margin-left: 5%;
-    max-width: 80rem;
+    max-width: 80rem, auto;
 
 }
 
@@ -281,7 +281,7 @@ h2 {
     gap: 180px;
     padding: 20px;
     position: relative;
-    margin: 1%;
+    margin: 1%, auto;
     margin-top: 3%;
     margin-left: 5%;
     max-width: 80rem;
@@ -293,7 +293,7 @@ h2 {
     gap: repeat(auto-fit, minmax(250px, 1fr));
     padding: 20px;
     position: relative;
-    margin: 3%;
+    margin: 3%, auto;
     margin-top: 1%;
     margin-left: 10%;
     max-width: 80rem;
