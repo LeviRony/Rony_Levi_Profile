@@ -7,4 +7,5 @@ footer {
   bottom: 0;
   width: 100%;
   z-index: 5;
+  flex-wrap: wrap; /* Ensures elements move to new lines on small screens */
 }

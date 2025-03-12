@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
 
 /* Background setup */
@@ -17,10 +16,7 @@ html {
     background-color: #000;
     overflow-x: hidden;
     overflow-y: auto;
-    z-index: -1;
-    max-width: 800vh;
-    display: flex;
-    flex-wrap: wrap; /* Ensures elements move to new lines on small screens */
+    z-index: -1;   
     
 }
 
@@ -38,7 +34,16 @@ body {
     padding-bottom: 7.5vh;
     /* Adjusts spacing instead of margin */
 }
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
 
+    .welcome {
+        text-align: center;
+    }
+}
 /* Adjust layout for very small screens */
 @media (max-height: 600px) {
     main {
@@ -48,11 +53,7 @@ body {
         padding-bottom: 5vh;
     }
 }
-@media (max-width: 600px) {
-    .desktop-only {
-        display: none;
-    }
-}
+
 
 @media (max-width: 768px) {
     .welcome {
@@ -258,6 +259,7 @@ h2 {
 .grid-item img {
     border-radius: 5px;
     max-width: 150%;
+    max-width: 100%;
     margin: auto;
 }
 
@@ -268,6 +270,7 @@ h2 {
 .grid-item img,
 .row-item img {
     width: 100%;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
 }
@@ -287,7 +290,7 @@ h2 {
 .sec_row-container {
     display: -webkit-box;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: -80px;
+    gap: repeat(auto-fit, minmax(250px, 1fr));
     padding: 20px;
     position: relative;
     margin: 3%;
@@ -318,4 +321,42 @@ h2 {
     max-width: 250%;
     margin-left: 20%;
     margin: auto;
+}
+
+/* Responsive Layout Adjustments */
+@media (max-width: 768px) {
+    .welcome {
+        flex-direction: column;
+    }
+    
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        font-size: clamp(1.5rem, 4vw, 3rem);
+    }
+
+    #bio {
+        text-align: center;
+    }
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .welcome-container {
+        padding: 20px;
+    }
+
+    .grid-container {
+        gap: 10px;
+    }
+    
+    h1, h2 {
+        text-align: center;
+    }
 }
