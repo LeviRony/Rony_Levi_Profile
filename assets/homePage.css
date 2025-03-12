@@ -137,7 +137,7 @@ h2 {
 
 }
 
-.grid_1-container{
+.grid_1-container {
     display: grid;
     width: 50%;
     height: 50vh;
@@ -149,8 +149,9 @@ h2 {
     margin-top: -5%;
     margin-left: 3.5%;
     max-width: 80rem;
-    
+
 }
+
 .grid_2-container {
     display: grid;
     width: 50%;
@@ -163,10 +164,10 @@ h2 {
     margin-top: -19%;
     margin-left: 10%;
     max-width: 80rem;
-    
+
 }
 
-.grid_3-container{
+.grid_3-container {
     display: grid;
     width: 50%;
     height: 50vh;
@@ -178,8 +179,9 @@ h2 {
     margin-top: -19%;
     margin-left: 4.5%;
     max-width: 80rem;
-    
+
 }
+
 .grid_4-container {
     display: grid;
     width: 50%;
@@ -192,7 +194,7 @@ h2 {
     margin-top: -20%;
     margin-left: 5%;
     max-width: 80rem;
-    
+
 }
 
 
@@ -241,6 +243,7 @@ h2 {
     margin-left: 5%;
     max-width: 80rem;
 }
+
 .sec_row-container {
     display: -webkit-box;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
