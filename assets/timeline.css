@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 
 /* Background setup */
@@ -17,6 +18,7 @@ html {
   background-color: #000;
   overflow-x: hidden;
   overflow-y: auto;
+  min-width: 90vh;
 }
 
 /* Ensures full height coverage */
@@ -24,8 +26,60 @@ body {
   color: aliceblue;
   font-family: Helvetica, sans-serif;
   min-height: 100vh;
+  
+}
+/* Adjust layout for very small screens */
+@media (max-height: 600px) {
+  main {
+      justify-content: flex-start;
+      padding-top: 5vh;
+      /* Avoids elements being too squeezed */
+      padding-bottom: 5vh;
+  }
+}
+@media (max-width: 600px) {
+  .desktop-only {
+      display: none;
+  }
 }
 
+@media (max-width: 768px) {
+  .welcome {
+      flex-direction: column;
+      margin-right: 0;
+  }
+}
+/* Small mobile screens (Portrait Phones) */
+@media (max-width: 480px) {
+  body {
+      font-size: 14px;
+  }
+  .container {
+      width: 95%;
+      padding: 10px;
+  }
+}
+
+/* Tablets and larger phones */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+}
+
+/* Laptops and small desktops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+      width: 80%;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1025px) {
+  .container {
+      width: 70%;
+  }
+}
 /* My Journey title */
 .timeline-title {
   margin: 8rem auto 0 auto;

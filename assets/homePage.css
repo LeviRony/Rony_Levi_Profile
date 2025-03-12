@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 /* Background setup */
@@ -17,6 +18,10 @@ html {
     overflow-x: hidden;
     overflow-y: auto;
     z-index: -1;
+    max-width: 800vh;
+    display: flex;
+    flex-wrap: wrap; /* Ensures elements move to new lines on small screens */
+    
 }
 
 /* Flexbox-centered layout for all screen heights */
@@ -29,8 +34,6 @@ body {
     justify-content: center;
     align-items: left;
     min-height: 100vh;
-    /* Ensures full height usage */
-    background-color: rgba(0, 0, 0, 0.5);
     /* Dark overlay */
     padding-bottom: 7.5vh;
     /* Adjusts spacing instead of margin */
@@ -45,6 +48,11 @@ body {
         padding-bottom: 5vh;
     }
 }
+@media (max-width: 600px) {
+    .desktop-only {
+        display: none;
+    }
+}
 
 @media (max-width: 768px) {
     .welcome {
@@ -52,6 +60,38 @@ body {
         margin-right: 0;
     }
 }
+/* Small mobile screens (Portrait Phones) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+}
+
+/* Tablets and larger phones */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Laptops and small desktops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1025px) {
+    .container {
+        width: 70%;
+    }
+}
+
 
 img {
     margin-left: 70rem;
